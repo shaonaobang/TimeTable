@@ -1,0 +1,80 @@
+# Node.js / package managers
+node_modules/
+.pnpm-store/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+google-services.json
+GoogleService-Info.plist
+service-account*.json
+credentials*.json
+secrets*.json
+
+# Android / Gradle generated and local files
+.android/
+.gradle/
+.gradle-home/
+**/.gradle/
+**/build/
+local.properties
+*.apk
+*.aab
+*.aar
+*.ap_
+*.dex
+*.class
+.cxx/
+.externalNativeBuild/
+captures/
+
+# Capacitor-generated Android assets
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
+android/app/src/main/assets/capacitor.plugins.json
+android/app/src/main/res/xml/config.xml
+android/capacitor-cordova-android-plugins/
+
+# Release artifacts kept beside the Web source
+outputs/*.apk
+outputs/*.aab
+outputs/*.zip
+
+# Python generated/local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Local scratch files
+work/
+*.log
+*.hprof

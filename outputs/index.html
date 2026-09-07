@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6f7fb" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.svg" />
+  <link rel="stylesheet" href="styles.css?v=4" />
+  <title>拾光课表</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><div class="brand-mark">✦</div><div><div class="brand-name">拾光课表</div><div class="brand-sub">把每一天，安排得刚刚好</div></div></div>
+      <button class="icon-btn" id="semesterBtn" title="设置学期">⚙</button>
+    </header>
+
+    <main>
+      <section class="hero-card">
+        <div class="semester-line"><span id="semesterName">大二 · 上</span><span class="dot"></span><span id="weekLabel">第 1 周</span></div>
+        <div class="hero-actions"><button class="ghost-btn" id="prevWeek">‹ 上一周</button><button class="today-btn" id="todayWeek">回到本周</button><button class="ghost-btn" id="nextWeek">下一周 ›</button></div>
+        <div class="week-picker" id="weekPicker"></div>
+      </section>
+
+      <section class="schedule-section">
+        <div class="section-heading"><div><h2>本周课表</h2><p id="rangeLabel">9月1日 — 9月7日</p></div><button class="mini-btn" id="addCourseBtn">＋ 课程</button></div>
+        <div class="schedule-wrap"><div class="schedule" id="schedule"></div></div>
+        <div class="hint">长按空白格添加课程 · 点击课程查看详情</div>
+      </section>
+
+      <section class="tasks-section">
+        <div class="section-heading"><div><h2>今日待办</h2><p id="taskDateLabel">今天</p></div><button class="mini-btn primary" id="addTaskBtn">＋ 添加任务</button></div>
+        <div id="taskList" class="task-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <div class="modal" id="modal"></div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js?v=4"></script>
+</body>
+</html>
